@@ -261,8 +261,17 @@ int ProblemSolver::Problem11() {
 
 }
 
+//Correct Solution (0.072 seconds)
 int ProblemSolver::Problem12() {
 
+	int num = 28;
+	for (int i = 8; Utilities::CountDivisors(Utilities::PrimeFactorize(num)) < 500; i++) {
 
+		num += i;
+
+	}
+	
+	return num;
 
 }
+
