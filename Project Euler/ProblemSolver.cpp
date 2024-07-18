@@ -260,3 +260,9 @@ int ProblemSolver::Problem11() {
 	return biggestProd;
 
 }
+
+int ProblemSolver::Problem12() {
+
+
+
+}
