@@ -275,3 +275,44 @@ int ProblemSolver::Problem12() {
 
 }
 
+//Correct Solution (0.459 seconds)
+int ProblemSolver::Problem14() {
+
+	int chainLength = 1;
+	int maxChainLength = 1;
+	int maxChainNum;
+	long long n;
+	
+	for (int i = 1; i < 1000000; i++) {
+
+		n = i;
+
+		for (int j = 1; n > 1; j++) {
+
+			if (n < 0) {
+				cout << "Rollover Error!";
+			}
+
+			if (n % 2 == 0) {
+				n /= 2;
+			}
+			else {
+				n = 3 * n + 1;
+			}
+
+			chainLength = j;
+
+		}
+
+		if (maxChainLength < chainLength) {
+
+			maxChainLength = chainLength;
+			maxChainNum = i;
+
+		}
+			
+	}
+
+	return maxChainNum;
+
+}
