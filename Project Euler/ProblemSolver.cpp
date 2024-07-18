@@ -316,3 +316,41 @@ int ProblemSolver::Problem14() {
 	return maxChainNum;
 
 }
+
+//Correct Solution (0.005 seconds)
+int ProblemSolver::Problem16() {
+
+	//This is going to act as our big num that we can't directly calculate
+	//Also pretend the array is set up like [5th, 4th, 3rd, 2nd, 1st, 0th] 
+	std::vector<int> bigNum(302,0);
+	bool carryOver = false;
+	bigNum[0] = 1;
+
+	for (int i = 0; i < 1000; i++) {
+
+		for (int j = 0; j < bigNum.size(); j++) {
+
+			bigNum[j] *= 2;
+			if (carryOver) {
+				bigNum[j] += 1;
+				carryOver = false;
+			}
+			if (bigNum[j] > 9) {
+				bigNum[j] -= 10;
+				carryOver = true;
+			}
+
+
+		}
+
+	}
+
+	int sum = 0;
+
+	for (int i = 0; i < bigNum.size(); i++) {
+		sum += bigNum[i];
+	}
+
+	return sum;
+
+}

@@ -11,7 +11,7 @@ int main() {
 	auto start = high_resolution_clock::now();
 
 	ProblemSolver ps;
-	cout << ps.Problem14() << " is the solution. \n";
+	cout << ps.Problem16() << " is the solution. \n";
 
 	auto stop = high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(stop - start);
