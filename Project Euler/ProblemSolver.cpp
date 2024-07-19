@@ -354,3 +354,18 @@ int ProblemSolver::Problem16() {
 	return sum;
 
 }
+
+//Correct Solution (425 microseconds)
+int ProblemSolver::Problem20() {
+
+	Megaint num = Megaint(1);
+
+	for (int i = 1; i < 101; i++) {
+
+		num.multiply(i);
+
+	}
+
+	return num.sumDigits();
+
+}

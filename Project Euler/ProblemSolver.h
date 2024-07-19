@@ -1,8 +1,9 @@
 #pragma once
+#include "Utilities.h"
+#include "Megaint.h"
 #include <iostream>
 #include <sstream>
 #include <cstring>
-#include "Utilities.h"
 using namespace std;
 
 class ProblemSolver {
@@ -19,5 +20,6 @@ public:
 	int Problem12();
 	int Problem14();
 	int Problem16();
+	int Problem20();
 };
 

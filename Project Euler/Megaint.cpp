@@ -39,3 +39,17 @@ void Megaint::multiply(int m)
 	}
 
 }
+
+int Megaint::sumDigits() {
+
+	int sum = 0;
+
+	for (int i = 0; i < num.size(); i++) {
+
+		sum += num[i];
+
+	}
+
+	return sum;
+
+}

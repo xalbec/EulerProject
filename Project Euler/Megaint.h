@@ -22,6 +22,7 @@ public:
 	
 	void toString();
 	void multiply(int m);
+	int sumDigits();
 
 };
 
