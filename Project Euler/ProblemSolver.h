@@ -4,6 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <cstring>
+#include <fstream>
 using namespace std;
 
 class ProblemSolver {
@@ -21,5 +22,6 @@ public:
 	int Problem14();
 	int Problem16();
 	int Problem20();
+	int Problem22();
 };
 

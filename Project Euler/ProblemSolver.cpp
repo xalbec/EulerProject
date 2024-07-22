@@ -369,3 +369,19 @@ int ProblemSolver::Problem20() {
 	return num.sumDigits();
 
 }
+
+//TODO Unsolved
+int ProblemSolver::Problem22() {
+
+
+	ifstream file("Resources/names.txt");
+	string names;
+	file >> names;
+	cout << names;
+	file.close();
+
+	return 0;
+
+}
+
+}
