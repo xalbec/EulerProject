@@ -1,6 +1,6 @@
 #include "Megaint.h"
 
-void Megaint::toString()
+void Megaint::printString()
 {
 	
 	for (int i = num.size() - 1; i > -1; i--) {
@@ -8,6 +8,8 @@ void Megaint::toString()
 		cout << num[i];
 
 	}
+
+	cout << "\n";
 
 }
 

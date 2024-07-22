@@ -20,8 +20,9 @@ public:
 
 	}
 	
-	void toString();
+	void printString();
 	void multiply(int m);
+	void add(Megaint a);
 	int sumDigits();
 
 };
