@@ -384,4 +384,26 @@ int ProblemSolver::Problem22() {
 
 }
 
+//Correct Solution (1.91 seconds)
+int ProblemSolver::Problem25() {
+
+	Megaint a = Megaint(1);
+	Megaint b = Megaint(1);
+	Megaint temp;
+
+	int index = 2;
+
+	while (a.size() < 1000) {
+
+		temp = b;
+		b = a;
+		a = temp;
+		a.add(b);
+		index++;
+
+	}
+
+
+	return index;
+
 }

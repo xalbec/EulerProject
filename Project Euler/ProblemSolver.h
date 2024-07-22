@@ -23,5 +23,6 @@ public:
 	int Problem16();
 	int Problem20();
 	int Problem22();
+	int Problem25();
 };
 
