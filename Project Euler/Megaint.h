@@ -22,6 +22,7 @@ public:
 	}
 	
 	std::vector<int> getNum();
+	int getIntAt(int index);
 	int size();
 	void push_back(int n);
 	void printString();

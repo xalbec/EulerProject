@@ -12,6 +12,12 @@ std::vector<int> Megaint::getNum() {
 
 }
 
+int Megaint::getIntAt(int index){
+
+	return num[index];
+
+}
+
 void Megaint::push_back(int n) {
 
 	num.push_back(n);
