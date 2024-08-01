@@ -407,3 +407,31 @@ int ProblemSolver::Problem25() {
 	return index;
 
 }
+
+int ProblemSolver::Problem28() {
+	
+	//resets at 4 to 0
+	int count = 0;
+	int adder = 2;
+	long long sum = 0;
+	int i = 1;
+
+	while (i <= 1002001) {
+
+		sum += i;
+		if (count < 4) {
+			i += adder;
+			count++;
+		}
+		else {
+			count = 1;
+			adder += 2;
+			i += adder;
+		}
+		
+	}
+
+	return sum;
+
+}
+

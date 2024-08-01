@@ -24,5 +24,6 @@ public:
 	int Problem20();
 	int Problem22();
 	int Problem25();
+	int Problem28();
 };
 
